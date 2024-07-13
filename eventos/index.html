@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de masa corporal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de masa corporal</h1>
+        <div class="form-group">
+            <label for="altura">Altura (centimetros):</label>
+            <input type="number" id="altura" placeholder="Introduce tu altura">
+        </div>
+        <div class="form-group">
+            <label for="peso">Peso (kilogramos):</label>
+            <input type="number" id="peso" placeholder="Introduce tu peso">
+        </div>
+        <button id="botonCalcular">Calcular</button>
+        <div class="form-group">
+            <label for="resultado">Tu Indice de masa corpora es:</label>
+            <input type="text" id="resultado" readonly>
+        </div>
+        <div class="form-group">
+            <label for="categoria">Estas:</label>
+            <input type="text" id="categoria" readonly>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

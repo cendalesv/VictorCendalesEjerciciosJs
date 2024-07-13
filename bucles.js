@@ -242,3 +242,21 @@ for (let i = 5; i >= 1; i--) {
     
 }*/
 
+// Puto 16
+
+let lista = [389, 703, 247, 563, 224, 714, 464, 953, 708, 201, 887, 550, 515, 206, 131];
+//let lista = [389, 247, 703, 563, 224, 714, 464, 953, 708, 201, 887, 550, 515, 206, 131];
+let cantidadElementos = lista.length
+console.log(lista);
+console.log(cantidadElementos);
+for (let i = 0; i < cantidadElementos; i++) {
+    for (let j = 0; j < cantidadElementos-i; j++) {
+        if (lista[j] > lista[j+1] ) {
+            let temp = lista[j] // 703
+            lista[j] = lista[j+1] // 703 remplamelo por 247
+            lista[j+1] = temp
+        }  
+    }
+}
+console.log(lista);
+
